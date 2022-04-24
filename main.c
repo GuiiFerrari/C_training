@@ -36,6 +36,9 @@ int main(int argc, char *argv[]){
         printf("\n");
     }
     printf("\n");
+    for (int i = 0; i < len; i++){
+        free(matrix[i]);
+    }
     free(matrix);
     return 0;
 }
